@@ -1,13 +1,15 @@
 # Human CFG language for time
 **author**: *kengz kengzwl@gmail.com Feb 2016*
 
-This is a model of the human language for time using CFG and Euclidean transformations. Below we outline the CFG construction, short proofs, and algorithms.
+This is a model of the human language for time using CFG and Euclidean transformations. Below we outline the CFG construction, short proofs, and [algorithm](#algo).
 
 ## Human CFG for time
 
 The timeline is a 1-dimentional Euclidean number line, and thus obeys all the Euclidean transformations (in 1D they happen to be scalar arithmetics). Arithmetics `{∅,n,+,-,*,/}` by itself is a Context-Free Grammar (CFG). 
 
-The human language used to describe the timeline and its transformations is the arithmetics CFG plus two extra operators: `cron` (for repeated pattern) and `range` (to specify two points in time). Observe that these two operators obey the same production rules as the arithmetical functions. We can define the human language for time as a CFG extended from the arithmetics CFG with extra symbols obeying the same production rule structures, yielding `{∅,n,t,dt,f,ct,rt;+,-,*,/,c,r}`. The **terminal symbols** are `∅, t, ct, rt`. Note `t + dt ~ t`, and if one gets `dt` at the end, add it to `t = current time` to get `~ t` to give a valid terminal string. Apart from this, we treat `t, dt` as interchangeable symbols below due to them being covariant tensors.
+The human language used to describe the timeline and its transformations is the arithmetics CFG plus two extra operators: `cron` (for repeated pattern) and `range` (to specify two points in time). Observe that these two operators obey the same production rules as the arithmetical functions. We can define the human language for time as a CFG extended from the arithmetics CFG with extra symbols obeying the same production rule structures, yielding `{∅,n,t,dt,f,ct,rt;+,-,*,/,c,r}`. The **terminal symbols** are `∅, t, ct, rt`. 
+
+Note `t + dt ~ t`, and if one gets `dt` at the end, add it to `t = current time` to get `~ t` to give a valid terminal string. Apart from this, we treat `t, dt` as interchangeable symbols below due to them being covariant tensors.
 
 | variable | detail | operator | detail |
 |---|---|---|---|
@@ -34,7 +36,7 @@ The set above obeys the a set of CFG production rules (in precedence) which yiel
 | `<t:v>` | the unit of time, `t: {ms, s, m, h, d, w, M, y}` |
 | `~` | next step in the production rule. |
 
-#### Token parsing
+#### <a name="tokenize"></a>Token parsing
 An input string will be tokenized, with each valid token mapped into a valid CFG symbol, and invalid token maps into the null CFG symbol `∅`. This is done via a provided map. The keys are always parsed into `<t> or <n> <t>` conforming to the production rules (next section), with values and units are determined in the map. Some examples:
 
 - hour ~ `<t> ~ 1h`
@@ -52,7 +54,7 @@ We distinguish between 3 different types of token parsing, done in order. CFG sy
 |2.| subnormal forms | almost normal, but not english. e.g. `12/1-3, 2300hr, 23:00` |
 |3.| english forms | words in english, e.g. `tonight, evening, half an hour` |
 
-#### Production rules
+#### <a name="produce"></a>Production rules
 
 | | production rule | name | example |
 |---|---|---|---|
@@ -70,7 +72,7 @@ We distinguish between 3 different types of token parsing, done in order. CFG sy
 |6.4| `[<t>=time_origin]<r><t>`<br>`~ <rt>` | range-time | 4-6 ~ `{<t:4h>, <t:6h>}` |
 
 
-#### Interpretation rules
+#### <a name="interpret"></a>Interpretation rules
 At the end of parsing, the parse tree sentence should have only the **terminal symbols** `{t, ct, rt}`, with all the invalid symbols discarded. They should describe a transformation from the origin (current time).
 
 | sentence | interpretation |
@@ -85,14 +87,14 @@ At the end of parsing, the parse tree sentence should have only the **terminal s
 
 
 
-## Algorithm
+## <a name="algo"></a>Algorithm
 
 #### algorithm Parse:
 Given an input string `s`,
 
-1. Apply **Token parsing**,
-2. Apply **Production rules**,
-3. Apply **Interpretation**,
+1. Apply [**Token parsing**](#tokenize),
+2. Apply [**Production rules**](#produce),
+3. Apply [**Interpretation**](#interpret),
 4. Return a sentence of **terminal symbols** in `{t, ct, rt}`
 
 
