@@ -1,15 +1,15 @@
 {
-  "opMap": {
-    "plus": ["+", "plus", "add", "and", "at", "on", "in", "past", "later", "late", "after", "next", "from", "start", "starting", "since"],
-    "minus": ["-", "minus", "subtract", "ago", "earlier", "early", "before", "last"]
+  "op": {
+    "plus": ["plus", "+", "add", "and", "at", "on", "in", "past", "later", "late", "after", "next", "from", "start", "starting", "since"],
+    "minus": ["minus", "subtract", "ago", "earlier", "early", "before", "last"]
   },
-  "cMap": {
+  "c": {
     "c": ["every", "per", "repeat"]
   },
-  "rMap": {
+  "r": {
     "r": ["to", "thru", "through", "til", "till", "until", "-", "~"]
   },
-  "nMap": {
+  "n": {
     "0.25": ["quarter"],
     "0.5": ["half", "1/2"],
     "0": ["zero"],
@@ -43,7 +43,11 @@
     "100": ["hundred", "hundreds", "hundredth"],
     "1000": ["thousand", "thousands", "thousandth", "k", "K"]
   },
-  "tMap": {
+  "t": {
+    "=0h": ["today", "day"],
+    "12+=9h": ["tonight", "night"]
+  },
+  "dt": {
     "ms": ["ms", "millisecond", "milliseconds"],
     "s": ["s", "sec", "secs", "second", "seconds"],
     "m": ["m", "min", "mins", "minute", "minutes"],
@@ -53,9 +57,11 @@
     "M": ["M", "mo", "moon", "moons", "month", "months"],
     "y": ["y", "yr", "yrs", "year", "years"]
   },
-  "customMap": {},
-  "fMap": {
-    "f1": ["once"],
-    "f2": ["twice"]
+  "custom": {
+    "12M25d": ["christmas"]
+  },
+  "f": {
+    "1": ["once"],
+    "2": ["twice"]
   }
 }
