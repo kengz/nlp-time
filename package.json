@@ -1,0 +1,31 @@
+{
+  "name": "nlp-time",
+  "version": "0.1.0",
+  "description": "NLP time parser for time, range, and cron pattern.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kengz/nlp-time.git"
+  },
+  "keywords": [
+    "nlp",
+    "time",
+    "parse",
+    "parser",
+    "range",
+    "cron",
+    "date"
+  ],
+  "author": "kengz kengzwl@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kengz/nlp-time/issues"
+  },
+  "homepage": "https://github.com/kengz/nlp-time#readme",
+  "dependencies": {
+    "lodash": "^4.5.0"
+  }
+}

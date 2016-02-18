@@ -1,0 +1,55 @@
+{
+  "tMap": {
+    "ms": ["ms", "millisecond", "milliseconds"],
+    "s": ["s", "sec", "secs", "second", "seconds"],
+    "m": ["m", "min", "mins", "minute", "minutes"],
+    "h": ["h", "hr", "hrs", "hour", "hours"],
+    "d": ["d", "day", "days", "dai"],
+    "w": ["w", "wk", "wks", "week", "weeks"],
+    "M": ["M", "mo", "moon", "moons", "month", "months"],
+    "y": ["y", "yr", "yrs", "year", "years"]
+  },
+  "opMap": {
+    "plus": ["+", "plus", "add", "and", "at", "on", "in", "past", "later", "late", "after", "next", "from", "start", "starting", "since"],
+    "minus": ["-", "minus", "subtract", "ago", "earlier", "early", "before", "last"]
+  },
+  "everyMap": {
+    "every": ["every", "once", "per", "repeat"]
+  },
+  "nMap": {
+    "0.25": ["quarter"],
+    "0.5": ["half", "1/2"],
+    "0": ["zero"],
+    "1": ["one", "a", "an", "first"],
+    "2": ["two", "second"],
+    "3": ["three", "third"],
+    "4": ["four", "fourth"],
+    "5": ["five", "fifth"],
+    "6": ["six", "sixth"],
+    "7": ["seven", "seventh"],
+    "8": ["eight", "eighth"],
+    "9": ["nine", "ninth"],
+    "10": ["ten", "tenth"],
+    "11": ["eleven", "eleventh"],
+    "12": ["twelve", "twelveth"],
+    "13": ["thirteen", "thirteenth"],
+    "14": ["fourteen", "fourteenth"],
+    "15": ["fifteen", "fifteenth"],
+    "16": ["sixteen", "sixteenth"],
+    "17": ["seventeen", "seventeenth"],
+    "18": ["eighteen", "eighteenth"],
+    "19": ["nineteen", "nineteenth"],
+    "20": ["twenty", "twentieth"],
+    "30": ["thirty", "thirtieth"],
+    "40": ["fourty", "fourtieth"],
+    "50": ["fifty", "fiftieth"],
+    "60": ["sixty", "sixtieth"],
+    "70": ["seventy", "seventieth"],
+    "80": ["eighty", "eightieth"],
+    "90": ["ninety", "ninetieth"],
+    "100": ["hundred", "hundreds", "hundredth"],
+    "1000": ["thousand", "thousands", "thousandth", "k", "K"]
+  },
+  "customMap": {
+  }
+}
