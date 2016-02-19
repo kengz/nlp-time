@@ -54,7 +54,7 @@
     "M": ["M", "mo", "moon", "moons", "month", "months"],
     "y": ["y", "yr", "yrs", "year", "years"]
   },
-  "custom": {
+  "T": {
     "t:=7h,dt:0h": ["am", "a.m", "a.m."],
     "t:=0h,dt:12h": ["pm", "p.m", "p.m."],
     "t:=6h,dt:0h": ["dawn"],

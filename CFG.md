@@ -9,7 +9,7 @@ The timeline is a 1-dimentional Euclidean number line, and thus obeys all the Eu
 
 The human language used to describe the timeline and its transformations is the arithmetics CFG plus two extra operators: `cron` (for repeated pattern) and `range` (to specify two points in time). Observe that these two operators obey the same production rules as the arithmetical functions. We can define the human language for time as a CFG extended from the arithmetics CFG with extra symbols obeying the same production rule structures, yielding `{∅,n,t,dt,f,ct,rt;+,-,*,/,c,r}`. The **terminal symbols** are `∅, t, ct, rt`. 
 
-Note `t + dt ~ t`, and if one gets `dt` at the end, add it to `t = current time` to get `~ t` to give a valid terminal string. Apart from this, we treat `t, dt` as interchangeable symbols below due to them being covariant tensors.
+Note `t + dt ~ t`, and if one gets `dt` at the end, add it to `t = current time` to get `~ t` to give a valid terminal string. Apart from this, we treat `t, dt` as interchangeable symbols below, collectively as `T = {t, dt}`, due to them being covariant tensors.
 
 | variable | detail | operator | detail |
 |---|---|---|---|
