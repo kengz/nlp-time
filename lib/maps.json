@@ -1,6 +1,6 @@
 {
   "op": {
-    "plus": ["plus", "+", "add", "and", "at", "on", "in", "past", "later", "late", "after", "next", "from", "start", "starting", "since"],
+    "plus": ["plus", "+", "add", "and", "at", "on", "in", "past", "late", "after", "next", "from", "start", "starting", "since"],
     "minus": ["minus", "subtract", "ago", "earlier", "early", "before", "last"]
   },
   "c": {
@@ -43,10 +43,7 @@
     "100": ["hundred", "hundreds", "hundredth"],
     "1000": ["thousand", "thousands", "thousandth", "k", "K"]
   },
-  "t": {
-    "=0h": ["today", "day"],
-    "12+=9h": ["tonight", "night"]
-  },
+  "t": {},
   "dt": {
     "ms": ["ms", "millisecond", "milliseconds"],
     "s": ["s", "sec", "secs", "second", "seconds"],
@@ -58,7 +55,17 @@
     "y": ["y", "yr", "yrs", "year", "years"]
   },
   "custom": {
-    "12M25d": ["christmas"]
+    "t:=7h,dt:0h": ["am", "a.m", "a.m."],
+    "t:=0h,dt:12h": ["pm", "p.m", "p.m."],
+    "t:=6h,dt:0h": ["dawn"],
+    "t:=9h,dt:0h": ["morning"],
+    "t:=0h,dt:12h": ["noon"],
+    "t:=2h,dt:12h": ["afternoon"],
+    "t:=7h,dt:12h": ["evening"],
+    "t:=9h,dt:0h": ["today", "day"],
+    "t:=9h,dt:12h": ["tonight", "night"],
+    "t:,dt:=3h": ["later", "soon"],
+    "t:12M25d,dt": ["christmas"]
   },
   "f": {
     "1": ["once"],
