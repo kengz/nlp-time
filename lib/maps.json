@@ -65,7 +65,8 @@
     "t:=9h,dt:0h": ["today", "day"],
     "t:=9h,dt:12h": ["tonight", "night"],
     "t:,dt:=3h": ["later", "soon"],
-    "t:12M25d,dt": ["christmas"]
+    "t:,dt:=3h": ["1st", ""],
+    "t:12M25d,dt:": ["christmas"]
   },
   "f": {
     "1": ["once"],
