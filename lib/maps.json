@@ -55,17 +55,14 @@
     "y": ["y", "yr", "yrs", "year", "years"]
   },
   "T": {
-    "t:=7h,dt:0h": ["am", "a.m", "a.m."],
-    "t:=0h,dt:12h": ["pm", "p.m", "p.m."],
-    "t:=6h,dt:0h": ["dawn"],
-    "t:=9h,dt:0h": ["morning"],
-    "t:=0h,dt:12h": ["noon"],
-    "t:=2h,dt:12h": ["afternoon"],
-    "t:=7h,dt:12h": ["evening"],
-    "t:=9h,dt:0h": ["today", "day"],
-    "t:=9h,dt:12h": ["tonight", "night"],
     "t:,dt:=3h": ["later", "soon"],
-    "t:,dt:=3h": ["1st", ""],
+    "t:=0h,dt:12h": ["pm", "p.m", "p.m.", "noon"],
+    "t:=2h,dt:12h": ["afternoon"],
+    "t:=6h,dt:0h": ["dawn"],
+    "t:=7h,dt:0h": ["am", "a.m", "a.m."],
+    "t:=7h,dt:12h": ["evening"],
+    "t:=9h,dt:0h": ["morning", "today", "day"],
+    "t:=9h,dt:12h": ["tonight", "night"],
     "t:12M25d,dt:": ["christmas"]
   },
   "f": {
