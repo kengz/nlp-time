@@ -5,5 +5,5 @@ This is under still development.
 
 ## Todo
 
-- fix single token error
-- fix subnormal conflict 12/31 no year
+- ok if the dateStrArr parseable by subnormal, override
+do it at preinjection
