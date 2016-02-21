@@ -14,3 +14,5 @@ raw str -> parseNormal, save tokens, if overparsed, drop, restore into str,
 fix subnormal parsing first
 fix subnormal digit number as years
 MM/dd or MM/yyyy or yyyy/MM
+
+symbol on taking T form shd construct a T
