@@ -43,7 +43,9 @@
     "100": ["hundred", "hundreds", "hundredth"],
     "1000": ["thousand", "thousands", "thousandth", "k", "K"]
   },
-  "t": {},
+  "t": {
+    "d": ["st", "nd", "rd", "th"]
+  },
   "dt": {
     "ms": ["ms", "millisecond", "milliseconds"],
     "s": ["s", "sec", "secs", "second", "seconds"],
