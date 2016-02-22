@@ -12,3 +12,4 @@ ok take the results of parseNormal, the dateStrArr, on each, parseSubnormal, if 
 
 - maybe allow for operator to change bet t,dt
 - observe the extra smaller rules in the new production rules
+
