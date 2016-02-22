@@ -1,7 +1,9 @@
 {
   "op": {
     "plus": ["plus", "+", "add", "and", "at", "on", "in", "past", "late", "after", "next", "from", "start", "starting", "since"],
-    "minus": ["minus", "subtract", "ago", "earlier", "early", "before", "last"]
+    "minus": ["minus", "subtract", "ago", "earlier", "early", "before", "last"],
+    "times": ["times", "multiply"],
+    "divide": ["divide"]
   },
   "c": {
     "c": ["every", "per", "repeat"]
