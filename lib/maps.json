@@ -5,9 +5,9 @@
     "times": ["times", "multiply"],
     "divide": ["divide"]
   },
-  "bar": {
+  "o": {
     "plus": ["at", "on", "in", "past", "late", "after", "next", "from", "start", "starting", "since"],
-    "minus": ["minus", "subtract"]
+    "minus": ["minus", "subtract", "ago", "before"]
   },
   "c": {
     "c": ["every", "per", "repeat"]
