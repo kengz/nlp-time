@@ -53,7 +53,6 @@
     "d": ["st", "nd", "rd", "th"]
   },
   "dt": {
-    "ms": ["ms", "millisecond", "milliseconds"],
     "s": ["s", "sec", "secs", "second", "seconds"],
     "m": ["m", "min", "mins", "minute", "minutes"],
     "h": ["h", "hr", "hrs", "hour", "hours"],
