@@ -64,14 +64,14 @@
   },
   "T": {
     "t:,dt:=3h": ["later", "soon"],
-    "t:=0h,dt:=12h": ["pm", "p.m", "p.m.", "noon"],
-    "t:=9h,dt:=1d": ["tmr", "tomorrow"],
-    "t:=2h,dt:=12h": ["afternoon"],
-    "t:=6h,dt:0h": ["dawn"],
-    "t:=7h,dt:0h": ["am", "a.m", "a.m."],
-    "t:=7h,dt:12h": ["evening"],
-    "t:=9h,dt:0h": ["morning", "today", "day"],
-    "t:=9h,dt:=12h": ["tonight", "night"],
+    "t:=0h,dt:1mer": ["pm", "p.m", "p.m.", "noon"],
+    "t:=9h,dt:1d": ["tmr", "tomorrow"],
+    "t:=2h,dt:1mer": ["afternoon", "today"],
+    "t:=6h,dt:0mer": ["dawn"],
+    "t:=7h,dt:0mer": ["am", "a.m", "a.m."],
+    "t:=7h,dt:1mer": ["evening"],
+    "t:=9h,dt:0mer": ["morning"],
+    "t:=9h,dt:1mer": ["tonight", "night"],
     "t:12M25d,dt:": ["christmas"]
   },
   "f": {
