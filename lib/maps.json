@@ -9,12 +9,6 @@
     "plus": ["at", "on", "in", "past", "late", "after", "next", "from", "start", "starting", "since"],
     "minus": ["minus", "subtract", "ago", "before"]
   },
-  "c": {
-    "c": ["every", "per", "repeat"]
-  },
-  "r": {
-    "r": ["to", "thru", "through", "til", "till", "until", "-", "~"]
-  },
   "n": {
     "0.25": ["quarter"],
     "0.5": ["half", "1/2", "half an"],
